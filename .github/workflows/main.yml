@@ -36,8 +36,8 @@ jobs:
           name: Coursach
           path: build/libs
       - uses: actions/checkout@master
-      - name: send photo message
-      - uses: appleboy/telegram-action@master
+      - name: send artifact
+        uses: appleboy/telegram-action@master
         with:
           to: ${{ secrets.TELEGRAM_TO }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
