@@ -44,4 +44,5 @@ jobs:
         with:
           to: 311936430
           token: 1293316706:AAHznjMrfTX0XmgjQ68F6MNGJzy-9thRc_Q
+          message: A
           document: "./build/libs/team-0.0.1-SNAPSHOT.jar"
