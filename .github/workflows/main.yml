@@ -31,6 +31,8 @@ jobs:
           distribution: 'adopt'
       - name: Build
         run: ./gradlew build
+      - run: cd build/libs
+      - run: ls
       - uses: actions/upload-artifact@v2
         with:
           name: Coursach
