@@ -38,11 +38,11 @@ jobs:
         with:
           name: Coursach
           path: "./build/libs/team-0.0.1-SNAPSHOT.jar"
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v2
       - name: send artifact
         uses: appleboy/telegram-action@master
         with:
           to: 311936430
           token: 1293316706:AAHznjMrfTX0XmgjQ68F6MNGJzy-9thRc_Q
           message: A
-          document: "./build/libs/team-0.0.1-SNAPSHOT.jar"
+          document: ./build/libs/team-0.0.1-SNAPSHOT.jar
