@@ -32,16 +32,16 @@ jobs:
       - name: Build
         run: ./gradlew build
       - run: | 
-          cd build
+          cd build/libs
           ls
       - uses: actions/upload-artifact@v2
         with:
           name: Coursach
-          path: build/team-0.0.1-SNAPSHOT.jar
+          path: build/libs/team-0.0.1-SNAPSHOT.jar
       - uses: actions/checkout@master
       - name: send artifact
         uses: appleboy/telegram-action@master
         with:
           to: 311936430
           token: 1293316706:AAHznjMrfTX0XmgjQ68F6MNGJzy-9thRc_Q
-          document: build/team-0.0.1-SNAPSHOT.jar
+          document: build/libs/team-0.0.1-SNAPSHOT.jar
