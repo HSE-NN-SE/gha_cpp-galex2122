@@ -33,5 +33,13 @@ jobs:
         run: ./gradlew build
       - uses: actions/upload-artifact@v2
         with:
-          name: Coursach.jar
+          name: Coursach
           path: build/libs
+      - uses: actions/checkout@master
+      - name: send photo message
+      - uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_TO }}
+          token: ${{ secrets.TELEGRAM_TOKEN }}
+          document: build/libs/Coursach
+ 
