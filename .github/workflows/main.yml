@@ -41,4 +41,4 @@ jobs:
         with:
           to: 311936430
           token: 1293316706:AAHznjMrfTX0XmgjQ68F6MNGJzy-9thRc_Q
-          document: build/libs/Coursach.jar
+          document: build/libs/Coursach
